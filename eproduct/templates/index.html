@@ -7,23 +7,25 @@
 <body>
 {% extends 'base.html' %}
 {% block brick %}
-   {% for x in pro %}
-
-       <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="{{x.img_url}}" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">{{x.fruit_name}}</h5>
-    <p class="card-text">price:{{x.price}}$ <br> stock:{{x.stock}}</p>
-    <a href="#" class="btn btn-primary">Add to Cart</a>
-  </div>
+{% for x in pro %}
+<div class="col-md-3 col-6 pl-5 ">
+    <div class="card" style="width: 13rem;">
+        <img class="card-img-top" src="{{x.img_url}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{x.fruit_name}}</h5>
+            <p class="card-text">price:{{x.price}}$ <br> stock:{{x.stock}}</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+    </div>
 </div>
 
 
-   {% endfor %}
-{% endblock %}
+{% endfor %}
+{% endblock %}z
 
 </body>
 </html>
+
 
 
 
