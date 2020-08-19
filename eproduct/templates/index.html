@@ -8,9 +8,9 @@
 {% extends 'base.html' %}
 {% block brick %}
 {% for x in pro %}
-<div class="col-md-3 col-12">
+<div style="padding-left:80px; " class="  col-md-3 col-12 ">
     <div class="card" style="width: 13rem;">
-        <img style="width:200px" class="card-img-top" src="{{x.img_url}}" alt="Card image cap">
+        <img class="card-img-top" src="{{x.img_url}}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{x.fruit_name}}</h5>
             <p class="card-text">price:{{x.price}}$ <br> stock:{{x.stock}}</p>
@@ -21,10 +21,13 @@
 
 
 {% endfor %}
-{% endblock %}z
+{% endblock %}
 
 </body>
 </html>
+
+
+
 
 
 
